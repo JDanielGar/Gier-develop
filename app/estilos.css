@@ -1,10 +1,46 @@
 h3 {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	color: #0086d3;
 	text-align: center;
-	background-color: red;
+}
+b {
+	font-family: 'Fredoka One', cursive;
+}
+.saludate{
+	max-width: 16em;
+	max-height: 16em;
+}
+.mensajes {
+	border-style: solid;
+	border-color: rgba(30, 206, 197, .7);
+	border-width: 1px 0px 1px 0px;
+	height: 20em;
+	overflow-y: scroll;
+}
+.botonenviar {
+	font-family: 'Noto Sans', sans-serif;
+	text-transform: none;
 }
 h4 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #0086d3;
 	text-align: center;
 	padding-top: 1em;
+}
+li{
+	padding-left: 1em;
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.user-interfase {
+	margin-top: 1em;
+}
+.aimst {
+    font-family: 'Sigmar One', cursive;
+    background-color: red;
+    padding: 10px 10px 10px 10px;
+}
+.collapsible {
+	font-size: 10px;
 }
