@@ -3,8 +3,8 @@ var memoria={
 	"respuestas": []
 }
 memorias=[]
-
-function Decir() {
+// Metodo para obtener la palabra del usuario final
+function Decir() { 
 	return prompt("Dile algo a GIER")
 }
 function Escuchar() {
