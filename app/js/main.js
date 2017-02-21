@@ -2,14 +2,27 @@ var memoria = {
     "palabra": "",
     "respuestas": []
 }
+
 memorias = []
-    // Metodo para obtener la palabra del usuario final
+
+$("#text-button").click(function(){
+    Escuchar()
+});
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        Escuchar();
+    }
+});
+
+ // Metodo para obtener la palabra del usuario final
+
 function Decir() {
-    return prompt("Dile algo a GIER")
+    return $("input").val();
 }
 
 function Escuchar() {
     var palabra = Decir();
+    $(".messages").append($("<li><b>Tu</b>: "+palabra+"</li>"));
     obtenerMemorias();
     var respondio = false;
     for (i in memorias) {
@@ -26,7 +39,7 @@ function Escuchar() {
 function Responder(palabra) {
     for (i in memorias) {
         if (palabra == memorias[i].palabra) {
-            alert(memorias[i].respuestas);
+            $(".messages").append($("<li><b>Guier</b>: "+memorias[i].respuestas+"</li>").addClass("answer"));
             efectoAimst(palabra)
         }
     }

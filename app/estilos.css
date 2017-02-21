@@ -1,3 +1,6 @@
+html {
+	background: linear-gradient(-90deg, white, #b5fbff);
+}
 body {
 	margin: 5%;
 }
@@ -7,6 +10,9 @@ section{
  	margin-bottom: 20px;
 }
 h1 {
+	padding bottom: 10%; 
+	padding-top: 10%;
+	background-image: url("imagenes/header/gierheader2.jpg");
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #0086d3;
 	text-align: center;
@@ -32,31 +38,39 @@ b {
 .welcomeimg {
 	padding-right: 25%; 
 	padding-left: 25%;
+	max-width: 100%;
+    height: auto;
 }
 .text-interfase {
     height: 15em;
 }
 .messages {
+	border-radius: 5px;
+	margin-left: 4.3em;
 	height: 15em;
-    padding-left: 5em;
 	display: block;
-	width: 28em;
+	width: 72%;
 	overflow-y: scroll;
+	background: linear-gradient(-90deg, #636363, #474747);
 }
 li {
 	border-style: solid;
 	border-width: 0em 0em 0.1em 0em;
-	border-color: #afc5ff;
+	border-color: white;
 	display: inline-block;
-	width: 24em;
+	width: 22em;
 	padding-left: 1em;
 	padding-right: 1em;
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+	padding-top: 0.30em;
+	padding-bottom: 0.30em;
 	font-family: 'Sansita', sans-serif;
-	color: #565656;
+	color: white;
 	position: inherit;
 	text-align: justify;
+}
+.answer {
+	padding-left: 2em;
+	width: 80%
 }
 .input-interfase{
 	padding-top: 1em;
@@ -67,14 +81,15 @@ input[name="chat-text"]{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
 	font-size: 0.9em;
+	float: left;
 	color: black;
-	width: 82%;
+	width: 80%;
     border: 1.5px solid #00278e;
-    border-left: 0px;
-    border-right: 0px;
+    border-radius: 4px;
     padding: 0.4em;
+    margin-right: 1%;
 }
-.text-button{
+#text-button{
 	border: none;
 	border-radius: 2px;
 	color: white;
@@ -96,4 +111,7 @@ i{
 	right: 2%;
     top: 0.3em;
     position: relative;
+}
+b{
+	font-family: 'Roboto Slab', serif;
 }
