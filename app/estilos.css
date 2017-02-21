@@ -17,6 +17,8 @@ h1 {
 	color: #0086d3;
 	text-align: center;
 	font-size: 3em;
+	border-style: solid;
+	border-width: 0 0 10px 0;
 }
 b {
 	font-family: 'Fredoka One'
@@ -28,12 +30,24 @@ b {
 	right: auto;
 }
 .user-interfase {
-	width: 50%;
 	float: left;
+	width: 50%;
 }
 .propiedades{
-	width: 50%;
 	float: left;
+	width: 48%;
+}
+.header-right {
+	border: 3px solid #00436b;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+}
+h2 {
+	color: #67c2f7;
+	font-family: 'Fredoka One';
+	font-size: 3em;
+	margin: 0.5em;
 }
 .welcomeimg {
 	padding-right: 25%; 
@@ -93,6 +107,7 @@ input[name="chat-text"]{
 	border: none;
 	border-radius: 2px;
 	color: white;
+	cursor: pointer;
 	display: inline-block;
 	font-family: 'Open Sans Condensed', sans-serif;
 	height: 2.3em;
@@ -112,6 +127,31 @@ i{
     top: 0.3em;
     position: relative;
 }
-b{
+.interactionA{
 	font-family: 'Roboto Slab', serif;
 }
+.interactionB{
+	font-family: 'Roboto Slab', serif;
+	color: #62ff49;
+}
+.aimst {
+	height: 4em;
+	padding: 1em;
+}
+#aimst {
+    background-color: red;
+    border: none;
+    border-radius: 10%;
+    bottom: 30%;
+    color: white;
+    cursor: pointer;
+	font-family: 'Sansita', sans-serif;
+	font-style: extra-bold italic;
+	letter-spacing: 3px;
+    padding: 1em;
+    position: relative;
+    text-transform: uppercase;
+    top: 30%;
+}
+
+

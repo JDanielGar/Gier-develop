@@ -5,13 +5,10 @@ var memoria = {
 
 memorias = []
 
-$("#text-button").click(function(){
-    Escuchar()
-});
-$(document).keypress(function(e) {
-    if(e.which == 13) {
-        Escuchar();
-    }
+$("input").click(function(){
+    $("#text-button").click(function(){
+        Escuchar()
+    });
 });
 
  // Metodo para obtener la palabra del usuario final
@@ -22,24 +19,31 @@ function Decir() {
 
 function Escuchar() {
     var palabra = Decir();
-    $(".messages").append($("<li><b>Tu</b>: "+palabra+"</li>"));
-    obtenerMemorias();
     var respondio = false;
-    for (i in memorias) {
-        if (palabra == memorias[i].palabra) {
-            Responder(palabra);
-            respondio = true;
+    $("input").val("");
+    if(palabra!=('')){
+        obtenerMemorias();
+        for (i in memorias) {
+            if (palabra == memorias[i].palabra) {
+                Responder(palabra);
+                respondio = true;
+            }
         }
-    }
-    if (respondio == false) {
-        Aprender(palabra);
+        if(respondio == false) {
+            Aprender(palabra);
+        }
     }
 }
 
 function Responder(palabra) {
     for (i in memorias) {
         if (palabra == memorias[i].palabra) {
-            $(".messages").append($("<li><b>Guier</b>: "+memorias[i].respuestas+"</li>").addClass("answer"));
+            $(".messages").append($("<li><b>Tú</b>: "+palabra+"</li>"));
+            $('.messages b').last().addClass("interactionA");
+            $(".messages").val('');
+            $(".messages").append($("<li><b>Guier:</b> "+memorias[i].respuestas+"</li>").addClass("answer"));
+            $('.answer b').last().addClass("interactionB");
+            $(".messages").animate({scrollTop: $(".messages").height()}, 1000);
             efectoAimst(palabra)
         }
     }
