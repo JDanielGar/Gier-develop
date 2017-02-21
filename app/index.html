@@ -3,7 +3,6 @@
 	<head>
 		<title>GUIER RETURNS</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 		<link rel="stylesheet" href="estilos.css">
 		<script src="jquery-3.1.1.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,61 +10,38 @@
 		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
 	</head>
 	<body>
 		<section id="main-container">
-			<div class="row">
-				<div class="col s10 push-s1">
-					<div class="row">
-						<div class="col s6">
-							<form class="chat">
-								<h3><b>Gier</b> te da la BIENVENIDA</h3>
-								<div class="row">
-									<div class="col s6 offset-s3">
-										<img class="saludate hide-on-small-only" src="imagenes/gir-saludate2.png">
-									</div>
-								</div>
-								<div class="mensajes">
-									<ul>
-										<li>Hola, soy GIER</li>
+			<header>
+				<h1><b>Gier</b> te da la BIENVENIDA</h1>	
+			</header>
+			<section class="second-container">
+				<div class="user-interfase"">
+					<div class="welcomeimg">
+						<img class="saludate" src="imagenes/gir-saludate2.png">
+					</div>
+					<div class="chat">
+						<div class="text-interfase">
+								<div class="msg-size">
+									<ul class="messages">
 									</ul>
 								</div>
-								<div class="row user-interfase">
-									<div class="text-input">
-										<div class="col s8">
-											<input type="text" name="cuadro-texto" placeholder="Escribe tu mensaje aqui.">
-										</div>
-										<div class="col s4">
-											<div class="boton-enviar">
-												<a class="waves-effect waves-light btn"><i class="material-icons left"><img src="imagenes/iconos/GIERicon7.png"></i>Enviar</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</form>
+							</ul>
 						</div>
-						<div class="col s4 hide-on-small-only">
-							<div class="row">
-									<h4>Propiedades</h4>
-								<div class="row">
-									<div class="propiedades">
-										<div class="col aimst-text">AIMST:</div>
-										<form class="aimst">
-											<div class="col alegria">A</div>
-											<div class="col asco">A</div>
-											<div class="col ira">I</div>
-											<div class="col miedo">M</div>
-											<div class="col sorpresa">S</div>
-											<div class="col tristeza">T</div>
-										</form>
-									</div>
-								</div>
-							</div>
+						<div class="input-interfase">
+							<input type="text" placeholder="Escriba su mensaje aqui" name="chat-text" >
+							<button class="text-button"><i><img id="imagenicon" src="imagenes/iconos/GIERicon.png"></i> Enviar</button>
 						</div>
 					</div>
 				</div>
+				<div class="propiedades">
+					Propiedades		
+				</div>
+			</section>
 
-			</div>
+			
 		</section>
 	<script type="text/javascript" src="localStorage/local.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>

@@ -1,46 +1,99 @@
-h3 {
+body {
+	margin: 5%;
+}
+section{
+	margin-left: auto;
+  	margin-right: auto;
+ 	margin-bottom: 20px;
+}
+h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #0086d3;
 	text-align: center;
+	font-size: 3em;
 }
 b {
-	font-family: 'Fredoka One', cursive;
+	font-family: 'Fredoka One'
 }
-.saludate{
-	max-width: 16em;
-	max-height: 16em;
-}
-.mensajes {
-	border-style: solid;
-	border-color: rgba(30, 206, 197, .7);
-	border-width: 1px 0px 1px 0px;
-	height: 20em;
-	overflow-y: scroll;
-}
-.botonenviar {
-	font-family: 'Noto Sans', sans-serif;
-	text-transform: none;
-}
-h4 {
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: #0086d3;
-	text-align: center;
-	padding-top: 1em;
-}
-li{
-	padding-left: 1em;
-	font-family: 'Amatic SC', cursive;
-	font-size: 1.5em;
-	font-weight: bold;
+.second-container{
+	width: 100%;
+	margin-left: auto;
+	left: auto;
+	right: auto;
 }
 .user-interfase {
-	margin-top: 1em;
+	width: 50%;
+	float: left;
 }
-.aimst {
-    font-family: 'Sigmar One', cursive;
-    background-color: red;
-    padding: 10px 10px 10px 10px;
+.propiedades{
+	width: 50%;
+	float: left;
 }
-.collapsible {
-	font-size: 10px;
+.welcomeimg {
+	padding-right: 25%; 
+	padding-left: 25%;
+}
+.text-interfase {
+    height: 15em;
+}
+.messages {
+	height: 15em;
+    padding-left: 5em;
+	display: block;
+	width: 28em;
+	overflow-y: scroll;
+}
+li {
+	border-style: solid;
+	border-width: 0em 0em 0.1em 0em;
+	border-color: #afc5ff;
+	display: inline-block;
+	width: 24em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	font-family: 'Sansita', sans-serif;
+	color: #565656;
+	position: inherit;
+	text-align: justify;
+}
+.input-interfase{
+	padding-top: 1em;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+input[name="chat-text"]{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: black;
+	width: 82%;
+    border: 1.5px solid #00278e;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0.4em;
+}
+.text-button{
+	border: none;
+	border-radius: 2px;
+	color: white;
+	display: inline-block;
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 2.3em;
+	background: linear-gradient(-90deg, red, #db2b2b);
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-tap-highlight-color: transparent;
+	padding-bottom: 1em;
+}
+
+#imagenicon{
+	width: 1em;
+	height: 1,5em;
+}
+i{
+	right: 2%;
+    top: 0.3em;
+    position: relative;
 }
