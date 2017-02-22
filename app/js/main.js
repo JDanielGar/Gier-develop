@@ -5,12 +5,6 @@ var memoria = {
 
 memorias = []
 
-$("input").click(function(){
-    $("#text-button").click(function(){
-        Escuchar()
-    });
-});
-
  // Metodo para obtener la palabra del usuario final
 
 function Decir() {

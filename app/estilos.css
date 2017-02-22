@@ -13,6 +13,7 @@ h1 {
 	padding bottom: 10%; 
 	padding-top: 10%;
 	background-image: url("imagenes/header/gierheader2.jpg");
+	background-repeat: no-repeat;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #0086d3;
 	text-align: center;
@@ -90,14 +91,15 @@ li {
 	padding-top: 1em;
 	padding-left: 5em;
 	padding-right: 5em;
+	padding-bottom: 3em;
 }
 input[name="chat-text"]{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: bold;
-	font-size: 0.9em;
+	font-size: 1.2em;
 	float: left;
 	color: black;
-	width: 80%;
+	width: 75%;
     border: 1.5px solid #00278e;
     border-radius: 4px;
     padding: 0.4em;
@@ -110,14 +112,21 @@ input[name="chat-text"]{
 	cursor: pointer;
 	display: inline-block;
 	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2em;
 	height: 2.3em;
-	background: linear-gradient(-90deg, red, #db2b2b);
+	background: linear-gradient(-90deg, #db2b2b, red);
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-tap-highlight-color: transparent;
 	padding-bottom: 1em;
 }
-
+#text-button:hover{
+	background: #018708;
+}
+#text-button:active{
+	background: #018708;
+	background-color: rgba(1, 135, 8, .9);
+}
 #imagenicon{
 	width: 1em;
 	height: 1,5em;
@@ -135,23 +144,139 @@ i{
 	color: #62ff49;
 }
 .aimst {
-	height: 4em;
-	padding: 1em;
+    height: 4em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 24%;
+    padding-right: 24%;
 }
-#aimst {
-    background-color: red;
-    border: none;
-    border-radius: 10%;
-    bottom: 30%;
-    color: white;
-    cursor: pointer;
-	font-family: 'Sansita', sans-serif;
-	font-style: extra-bold italic;
-	letter-spacing: 3px;
+.aimstb{
+	width: 3em;
+	height: 1em;
+}
+.config {
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	border-radius: 5px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	text-transform: uppercase;
+
+}
+.alegria {
+	background-color: #ffdd00;
+	color: black;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
     padding: 1em;
+    margin: 2px;
+    text-align: center;
     position: relative;
-    text-transform: uppercase;
-    top: 30%;
 }
-
-
+.asco{
+	background-color: green;
+	color: black;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 1em;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+.ira {
+	background-color: red;
+	color: black;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 1em;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+.miedo{
+	background-color:grey;
+	color: black;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 1em;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+.sorpresa {
+	background-color: white;
+	color: black;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1em;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+.tristeza {
+	background-color: blue;
+	color: black;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 1em;
+    margin: 2px;
+    text-align: center;
+    position: relative;
+}
+.botonesEm {
+    padding-left: 14%;
+    padding-right: 14%;
+}
+.activarEm{
+	background-color: rgb(0, 109, 12);
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'PT Serif', serif;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.activarEm:hover {background-color: #3e8e41}
+.estabilizador{
+	background-color: rgb(0, 183, 189);
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'PT Serif', serif;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.estabilizador:hover {background-color: #0af5f2}
+.desactivarEm{
+	background-color: rgb(187, 2, 2);
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'PT Serif', serif;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.desactivarEm:hover {background-color: #ff0000}

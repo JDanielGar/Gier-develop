@@ -67,7 +67,7 @@ function estabilizadorEm(){
 			else if(aimst.alegria<0){
 				aimst.alegria++;
 			}
-			console.log(aimst.alegria);
+			$(".alegria").text(aimst.alegria);
 
 			if(aimst.asco>0){
 				aimst.asco--;
@@ -75,7 +75,7 @@ function estabilizadorEm(){
 			else if(aimst.asco<0){
 				aimst.asco++;
 			}
-			console.log(aimst.asco);
+			$(".asco").text(aimst.asco);
 
 			if(aimst.ira>0){
 				aimst.ira--;
@@ -83,7 +83,7 @@ function estabilizadorEm(){
 			else if(aimst.ira<0){
 				aimst.ira++;
 			}
-			console.log(aimst.ira);
+			$(".ira").text(aimst.ira);
 
 			if(aimst.miedo>0){
 				aimst.miedo--;
@@ -91,7 +91,7 @@ function estabilizadorEm(){
 			else if(aimst.miedo<0){
 				aimst.miedo++;
 			}
-			console.log(aimst.miedo);
+			$(".miedo").text(aimst.miedo);
 
 			if(aimst.sorpresa>0){
 				aimst.sorpresa--;
@@ -99,7 +99,7 @@ function estabilizadorEm(){
 			else if(aimst.sorpresa<0){
 				aimst.sorpresa++;
 			}
-			console.log(aimst.sorpresa);
+			$(".sorpresa").text(aimst.sorpresa);
 
 			if(aimst.tristeza>0){
 				aimst.tristeza--;
@@ -107,7 +107,7 @@ function estabilizadorEm(){
 			else if(aimst.tristeza<0){
 				aimst.tristeza++;
 			}
-			console.log(aimst.tristeza);
+			$(".tristeza").text(aimst.tristeza);
 
 			x=x+1; // Contador.
 
