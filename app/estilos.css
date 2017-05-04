@@ -10,16 +10,13 @@ section{
  	margin-bottom: 20px;
 }
 h1 {
-	padding bottom: 10%; 
-	padding-top: 10%;
-	background-image: url("imagenes/header/gierheader2.jpg");
-	background-repeat: no-repeat;
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: #0086d3;
-	text-align: center;
-	font-size: 3em;
-	border-style: solid;
-	border-width: 0 0 10px 0;
+    padding-top: 10%;
+    background-color: #008b7c;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 3em;
+    box-shadow: 0px 8px 5px #636363;
 }
 b {
 	font-family: 'Fredoka One'
@@ -114,7 +111,7 @@ input[name="chat-text"]{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.2em;
 	height: 2.3em;
-	background: linear-gradient(-90deg, #db2b2b, red);
+	background: linear-gradient(-90deg, #2b78db, rgb(14, 134, 165));
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-tap-highlight-color: transparent;
@@ -255,7 +252,7 @@ i{
 }
 .activarEm:hover {background-color: #3e8e41}
 .estabilizador{
-	background-color: rgb(0, 183, 189);
+	background: linear-gradient(-90deg, #2b78db, rgb(14, 134, 165));
     border: 1px solid #000000;
     border-radius: 3px;
     cursor: pointer;
@@ -266,7 +263,9 @@ i{
     color: white;
     font-weight: bold;
 }
-.estabilizador:hover {background-color: #0af5f2}
+button.estabilizador:hover {
+	background: linear-gradient(-90deg, #2b78db, rgb(14, 134, 165));
+}
 .desactivarEm{
 	background-color: rgb(187, 2, 2);
     border: 1px solid #000000;
@@ -280,3 +279,7 @@ i{
     font-weight: bold;
 }
 .desactivarEm:hover {background-color: #ff0000}
+
+.chat-advisor { 
+	padding-left: 3em; 
+}
